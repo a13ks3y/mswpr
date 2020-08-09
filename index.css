@@ -11,9 +11,9 @@ header {
 }
 .field {
     display: block;
-    width: 100%;
-    height: 100%;  
-    margin: auto;          
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);          
 }
 .field .row {
     display: block;

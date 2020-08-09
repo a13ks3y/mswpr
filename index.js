@@ -76,7 +76,7 @@ class App {
         this.render();
     }
     render() {
-        this.fieldEl.style.width = (this.W) * 64 + 'px';
+        //this.fieldEl.style.width = (this.W) * 64 + 'px';
         Object.keys(this).forEach(key => {
             if (!(this[key] instanceof Function)) {
                 const el = document.getElementById(`app.${key}`);
@@ -114,7 +114,7 @@ class App {
                             !n.isMine && maxRecursion > 0 && recursion(n, maxRecursion - 1);
                         }
                     });
-                }(cell, 10));
+                }(cell, 100));
 
             }
             this.render();
