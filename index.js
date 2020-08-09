@@ -155,7 +155,7 @@ class App {
     }
 }
 const CI = parseInt(localStorage.getItem('CI')) || 1;
-const W = parseInt(localStorage.getItem('W')) || ~~(window.screen.availWidth / 64);
-const H = parseInt(localStorage.getItem('H')) || ~~(window.screen.availHeight / 64);
+const W = parseInt(localStorage.getItem('W')) || ~~(window.screen.availHeight / 64);
+const H = parseInt(localStorage.getItem('H')) || ~~(window.screen.availWidth / 64);
 const MC = parseInt(localStorage.getItem('MC') || 10);
 const app = new App(CI, W, H, MC);
